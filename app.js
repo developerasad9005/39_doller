@@ -6,6 +6,9 @@ document.getElementById("submit").addEventListener("click", function () {
     let fourthPrizecount = document.getElementById('fourthPrize').value;
     let fivePrizecount = document.getElementById('fivePrize').value;
     let sixPrizecount = document.getElementById('sixPrize').value;
+    let sevenPrizePrizecount = document.getElementById('sevenPrize').value;
+    let eightPrizecount = document.getElementById('eightPrize').value;
+    let ninePrizecount = document.getElementById('ninePrize').value;
  
     
     let firstPrize = parseFloat(firstPrizecount) + 1;
@@ -15,6 +18,9 @@ document.getElementById("submit").addEventListener("click", function () {
     let fourthPrize = parseFloat(fourthPrizecount) + 1;
     let fivePrize = parseFloat(fivePrizecount) + 1;
     let sixPrize = parseFloat(sixPrizecount) + 1;
+    let sevenPrize = parseFloat(sevenPrizePrizecount) + 1;
+    let eightPrize = parseFloat(eightPrizecount) + 1;
+    let ninePrize = parseFloat(ninePrizecount) + 1;
 
     document.getElementById('firstPrize').value = parseFloat(firstPrize.toFixed(2));
     document.getElementById('secondPrize').value = parseFloat(secondPrize.toFixed(2));
@@ -22,10 +28,13 @@ document.getElementById("submit").addEventListener("click", function () {
     document.getElementById('fourthPrize').value = parseFloat(fourthPrize.toFixed(2));
     document.getElementById('fivePrize').value = parseFloat(fivePrize.toFixed(2));
     document.getElementById('sixPrize').value = parseFloat(sixPrize.toFixed(2));
+    document.getElementById('sevenPrize').value = parseFloat(sevenPrize.toFixed(2));
+    document.getElementById('eightPrize').value = parseFloat(eightPrize.toFixed(2));
+    document.getElementById('ninePrize').value = parseFloat(ninePrize.toFixed(2));
     
     
     
-    const subtotal = firstPrize + secondPrize + thirdPrize + fourthPrize + fivePrize + sixPrize;
+    const subtotal = firstPrize + secondPrize + thirdPrize + fourthPrize + fivePrize + sixPrize + sevenPrize + eightPrize + ninePrize;
 
     let subTotalResult = parseFloat(subtotal.toFixed(2));
 
@@ -42,6 +51,9 @@ document.getElementById("submit").addEventListener("click", function () {
     document.getElementById("fourthPrizeChange").innerText = fourthPrize;
     document.getElementById("fivePrizeChange").innerText = fivePrize;
     document.getElementById("sixPrizeChange").innerText = sixPrize;
+    document.getElementById("sevenPrizeChange").innerText = sevenPrize;
+    document.getElementById("eightPrizeChange").innerText = eightPrize;
+    document.getElementById("ninePrizeChange").innerText = ninePrize;
   
     
     
