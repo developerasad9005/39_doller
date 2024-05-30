@@ -8,7 +8,7 @@ document.getElementById("submit").addEventListener("click", function () {
     let sixPrizecount = document.getElementById('sixPrize').value;
     let sevenPrizePrizecount = document.getElementById('sevenPrize').value;
     let eightPrizecount = document.getElementById('eightPrize').value;
-    let ninePrizecount = document.getElementById('ninePrize').value;
+
  
     
     let firstPrize = parseFloat(firstPrizecount) + 1;
@@ -20,7 +20,7 @@ document.getElementById("submit").addEventListener("click", function () {
     let sixPrize = parseFloat(sixPrizecount) + 1;
     let sevenPrize = parseFloat(sevenPrizePrizecount) + 1;
     let eightPrize = parseFloat(eightPrizecount) + 1;
-    let ninePrize = parseFloat(ninePrizecount) + 1;
+
 
     document.getElementById('firstPrize').value = parseFloat(firstPrize.toFixed(2));
     document.getElementById('secondPrize').value = parseFloat(secondPrize.toFixed(2));
@@ -30,11 +30,11 @@ document.getElementById("submit").addEventListener("click", function () {
     document.getElementById('sixPrize').value = parseFloat(sixPrize.toFixed(2));
     document.getElementById('sevenPrize').value = parseFloat(sevenPrize.toFixed(2));
     document.getElementById('eightPrize').value = parseFloat(eightPrize.toFixed(2));
-    document.getElementById('ninePrize').value = parseFloat(ninePrize.toFixed(2));
+
     
     
     
-    const subtotal = firstPrize + secondPrize + thirdPrize + fourthPrize + fivePrize + sixPrize + sevenPrize + eightPrize + ninePrize;
+    const subtotal = firstPrize + secondPrize + thirdPrize + fourthPrize + fivePrize + sixPrize + sevenPrize + eightPrize;
 
     let subTotalResult = parseFloat(subtotal.toFixed(2));
 
@@ -53,7 +53,7 @@ document.getElementById("submit").addEventListener("click", function () {
     document.getElementById("sixPrizeChange").innerText = sixPrize;
     document.getElementById("sevenPrizeChange").innerText = sevenPrize;
     document.getElementById("eightPrizeChange").innerText = eightPrize;
-    document.getElementById("ninePrizeChange").innerText = ninePrize;
+
   
     
     
