@@ -1,6 +1,6 @@
 document.getElementById("submit").addEventListener("click", function () {
     const date = document.getElementById("date").value;
-    let firstPrizecount = document.getElementById('firstPrize').value;
+    // let firstPrizecount = document.getElementById('firstPrize').value;
     let secondPrizecount = document.getElementById('secondPrize').value;
     let thirdPrizecount = document.getElementById('thirdPrize').value;
     let fourthPrizecount = document.getElementById('fourthPrize').value;
@@ -11,7 +11,7 @@ document.getElementById("submit").addEventListener("click", function () {
 
  
     
-    let firstPrize = parseFloat(firstPrizecount) + 1;
+    // let firstPrize = parseFloat(firstPrizecount) + 1;
 
     let secondPrize = parseFloat(secondPrizecount) + 1;
     let thirdPrize = parseFloat(thirdPrizecount) + 1;
@@ -22,7 +22,7 @@ document.getElementById("submit").addEventListener("click", function () {
     let eightPrize = parseFloat(eightPrizecount) + 1;
 
 
-    document.getElementById('firstPrize').value = parseFloat(firstPrize.toFixed(2));
+    // document.getElementById('firstPrize').value = parseFloat(firstPrize.toFixed(2));
     document.getElementById('secondPrize').value = parseFloat(secondPrize.toFixed(2));
     document.getElementById('thirdPrize').value = parseFloat(thirdPrize.toFixed(2));
     document.getElementById('fourthPrize').value = parseFloat(fourthPrize.toFixed(2));
@@ -34,7 +34,7 @@ document.getElementById("submit").addEventListener("click", function () {
     
     
     
-    const subtotal = firstPrize + secondPrize + thirdPrize + fourthPrize + fivePrize + sixPrize + sevenPrize + eightPrize;
+    const subtotal =   secondPrize + thirdPrize + fourthPrize + fivePrize + sixPrize + sevenPrize + eightPrize;
 
     let subTotalResult = parseFloat(subtotal.toFixed(2));
 
@@ -46,7 +46,7 @@ document.getElementById("submit").addEventListener("click", function () {
   
 
     document.getElementById('secoundPrizeChange').innerText = secondPrize;
-    document.getElementById("firstPrizeChange").innerText = firstPrize;
+    // document.getElementById("firstPrizeChange").innerText = firstPrize;
     document.getElementById("thirdPrizeChange").innerText = thirdPrize;
     document.getElementById("fourthPrizeChange").innerText = fourthPrize;
     document.getElementById("fivePrizeChange").innerText = fivePrize;
