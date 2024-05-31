@@ -184,6 +184,9 @@ document.getElementById('shop').addEventListener('click', function() {
    else if(shop_name === "ALDI"){
     document.getElementById('bg_image').src = 'image/ALDI.png';
    }
+   else if(shop_name === "Gap"){
+    document.getElementById('bg_image').src = 'image/gap.png';
+   }
 })
 
 // document.getElementById('nameChanger').addEventListener('click', function () {
